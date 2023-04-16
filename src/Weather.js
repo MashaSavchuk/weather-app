@@ -37,14 +37,34 @@ export default function Weather() {
   }
 
   let form = (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="search"
-        placeholder="Enter a city..."
-        onChange={updateCity}
-      />
-      <button type="submit">Search</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          onChange={updateCity}
+        />
+        <button type="submit">Search</button>
+      </form>
+      <p>
+        This project was coded by Mariia Savchuk and is
+        <a
+          href="https://github.com/MashaSavchuk/weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on GitHub
+        </a>
+        and hosted on
+        <a
+          href="https://aesthetic-salamander-f2e005.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
+      </p>
+    </div>
   );
 
   if (loaded) {
